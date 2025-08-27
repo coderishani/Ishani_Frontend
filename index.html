@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishani's interactive webpage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body {
+            background-color: rgb(170,170, 170);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main-wrapper {
+width: 1215px;
+height: 650px;
+border: 2px solid black;
+border-radius: 30px;
+background-color: rgb(214, 214, 214);
+box-shadow: #000000 0px 0px 10px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+        }
+     
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+
+        .container1, .container2 {
+            height: 500px;
+            width: 300px;
+            border-radius: 20px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: #343030 0px 0px 10px;
+            background-color: rgb(236, 230, 230);
+        }
+
+        .container2 {
+            position: relative;
+            background-color: rgb(83, 193, 227);
+            border-bottom: 11px solid rgb(87, 223, 14);
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        .loader {
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgb(110, 124, 255);
+            border-top: 10px solid #0033ff;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        .ball {
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            animation: bounce 2s infinite;
+            background-image: url(./football.webp);
+            background-size: 130px;
+            background-position: center;
+            box-shadow: #343030 0px 0px 10px 1px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+                animation-timing-function: ease-in;
+            }
+            50% {
+                transform: translateY(435px);
+                animation-timing-function: ease;
+            }
+            100% {
+                transform: translateY(0);
+                animation-timing-function: ease-in;
+            }
+        }
+
+        h1 {
+            background-image: url(./example-of-a-linear-gradient-using-45-degrees-angle-from-red-to-blue-in-css.png);
+            background-clip: text;
+            background-size: cover;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: rgb(17, 6, 46);
+            box-shadow: #343030 0px 0px 10px 1px;
+            border: 5px solid;
+            border-image: linear-gradient(yellow, red, green, blue, pink, purple)1;
+            /*doubt
+            animation:  spin border 2s ease-in-out infinite; */
+        }
+
+        .box .content {
+            padding: 20px;
+            color: #ddd;
+            text-align: center;
+            gap:15px;
+            letter-spacing: 0.2rem;
+        }
+
+        .box .content h1 {
+            font-size: clamp(1.7rem, 5vw, 2.1rem);
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+        }
+
+        .box .content p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+        }
+
+    .box .glass {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: block;
+            pointer-events: none;
+        }
+
+        /*doubt
+        .box .border {
+            animation: spin 2s ease-in-out infinite;
+        } */
+
+        
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav style="display: flex;">
+            <div class="logo">
+                <img src="Ishani Name Logo.jpg" alt="Logo" height="100px">
+
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="main-wrapper">
+        <h1>KEYFRAME AND ANIMATION</h1>
+        <div class="container">
+            <div class="container1">
+                <div class="loader"></div>
+            </div>
+            <div class="container2">
+                <div class="ball"></div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="glass"></div>
+                        <div class="content">
+                            <h1>Glowing Border</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur alias, a aliquid ut fugit delectus quaerat, exercitationem quidem quam iure accusantium mollitia nemo odio magni asperiores maiores doloribus optio, dicta quae laudantium voluptates. Esse laudantium, temporibus inventore atque voluptatibus veniam ad mollitia eaque natus illum iure explicabo laborum eius.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MySite.com</p>
+    </footer>
+
+</body>
+
+</html>
