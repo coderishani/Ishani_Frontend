@@ -26,7 +26,7 @@ This project demonstrates the fundamentals of frontend web development by buildi
 
 ## 📸 Screenshot
 
-![Homepage](images/homepage.png)
+![Homepage](images/homapage.png)
 
 ## 📁 Project Structure
 
