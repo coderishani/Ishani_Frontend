@@ -2,7 +2,7 @@
 
 A modern frontend web project developed during my **AppWars Frontend Development Internship**.
 
-This project demonstrates the fundamentals of frontend web development by building an interactive e-commerce webpage using HTML, CSS, and JavaScript.
+This project demonstrates the fundamentals of frontend web development by building an interactive e-commerce webpage using HTML5 and CSS3.
 
 ---
 
@@ -24,8 +24,6 @@ This project demonstrates the fundamentals of frontend web development by buildi
 
 - HTML5
 - CSS3
-- JavaScript
-
 ---
 
 ## 📸 Screenshot
@@ -33,18 +31,19 @@ This project demonstrates the fundamentals of frontend web development by buildi
 ![Homepage](homepage.png)
 
 ## 📁 Project Structure
-
-```
-E-commerce website/
+Ishani_Frontend/
 │
 ├── css/
 │   ├── style.css
 │   ├── responsive.css
 │   └── utils.css
-├── img/
-├── js/
-└── index.html
-```
+│
+├── images/
+│   ├── homepage.png
+│   └── Ishani Name Logo.jpg
+│
+├── index.html
+└── README.md
 
 ---
 
@@ -53,7 +52,6 @@ E-commerce website/
 - Building webpage layouts using HTML
 - Styling webpages with CSS
 - Creating animations using CSS
-- Adding interactivity with JavaScript
 - Organizing frontend projects into reusable folders
 
 ---
