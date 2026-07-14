@@ -60,4 +60,10 @@ Ishani_Frontend/
 
 This project was created as part of my **AppWars Frontend Development Internship** to strengthen my frontend development skills.
 
+## Author
+
+**Ishani Jain**
+
+GitHub: https://github.com/coderishani
+
 ⭐ Thank you for visiting this repository!
